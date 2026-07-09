@@ -1,0 +1,18 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.services": "Services",
+  "nav.pricing": "Pricing",
+  "nav.blog": "Blog",
+  "nav.contact": "Contact",
+  "admin.dashboard": "Dashboard",
+  "admin.users": "Manage Users",
+  "admin.trainers": "Manage Trainers",
+  "admin.blogs": "Manage Blogs",
+  "admin.testimonials": "Manage Testimonials",
+  "admin.gallery": "Manage Gallery",
+  "admin.services": "Manage Services",
+  "admin.pricing": "Manage Pricing",
+  "admin.messages": "Contact Messages",
+  "admin.analytics": "Analytics"
+}

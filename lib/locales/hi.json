@@ -1,0 +1,18 @@
+{
+  "nav.home": "होम",
+  "nav.about": "हमारे बारे में",
+  "nav.services": "सेवाएं",
+  "nav.pricing": "मूल्य",
+  "nav.blog": "ब्लॉग",
+  "nav.contact": "संपर्क करें",
+  "admin.dashboard": "डैशबोर्ड",
+  "admin.users": "उपयोगकर्ता प्रबंधित करें",
+  "admin.trainers": "प्रशिक्षक प्रबंधित करें",
+  "admin.blogs": "ब्लॉग प्रबंधित करें",
+  "admin.testimonials": "प्रशंसापत्र प्रबंधित करें",
+  "admin.gallery": "गैलरी प्रबंधित करें",
+  "admin.services": "सेवाएं प्रबंधित करें",
+  "admin.pricing": "मूल्य प्रबंधित करें",
+  "admin.messages": "संपर्क संदेश",
+  "admin.analytics": "विश्लेषण"
+}
