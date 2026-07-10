@@ -20,10 +20,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-black/45 backdrop-blur-xl border-b border-green-500/20 shadow-lg">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-8 py-4">
+    <header className="fixed inset-x-0 top-0 z-50 overflow-x-hidden bg-black/45 backdrop-blur-xl border-b border-green-500/20 shadow-lg">
+     <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 w-full">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link
+  href="/"
+  className="flex items-center gap-2 min-w-0 flex-1 lg:flex-none"
+>
           <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-green-500 shadow-lg shadow-green-500/30">
             <Image
               src="/images/logo1.png"
@@ -36,10 +39,10 @@ export default function Navbar() {
           </div>
 
           <div>
-            <h1 className="text-2xl font-bold text-white">
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white truncate">
               Yoga Wellness
             </h1>
-            <p className="text-xs text-green-300">
+           <p className="hidden sm:block text-xs text-green-300 truncate">
               Balance • Health • Peace
             </p>
           </div>
@@ -68,9 +71,9 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          onClick={() => setOpen(!open)}
-          className="lg:hidden text-white hover:text-green-400 transition"
-        >
+  onClick={() => setOpen(!open)}
+  className="lg:hidden flex-shrink-0 text-white hover:text-green-400 transition"
+>
           {open ? <FiX size={26} /> : <FiMenu size={26} />}
         </button>
       </nav>
