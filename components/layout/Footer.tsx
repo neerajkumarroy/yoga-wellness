@@ -116,19 +116,20 @@ export default function Footer() {
             Get wellness tips directly in your inbox.
           </p>
 
-          <form className="flex">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="flex-1 rounded-l-full px-4 py-3 bg-white text-black outline-none"
-            />
+          <form className="flex w-full max-w-md mx-auto">
+  <input
+    type="email"
+    placeholder="Enter your email"
+    className="min-w-0 flex-1 rounded-l-full px-4 py-3 bg-white text-black outline-none"
+  />
 
-            <button
-              className="bg-green-600 hover:bg-green-700 px-6 rounded-r-full font-medium transition"
-            >
-              Join
-            </button>
-          </form>
+  <button
+    type="submit"
+    className="flex-shrink-0 bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 rounded-r-full font-medium transition"
+  >
+    Join
+  </button>
+</form>
         </div>
       </div>
 
