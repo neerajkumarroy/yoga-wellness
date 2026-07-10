@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   FiInstagram,
   FiFacebook,
@@ -23,22 +24,33 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Logo */}
-        <div>
-          <div className="flex items-center gap-2 mb-4">
-            <span className="h-10 w-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-lg">
-              Y
-            </span>
+        <div className="flex items-center gap-4 mb-6">
 
-            <span className="text-xl font-bold">
-              Yoga Wellness
-            </span>
-          </div>
+  <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-green-500 shadow-lg shadow-green-500/30">
 
-          <p className="text-gray-300 leading-7 text-sm">
-            Transform your body, calm your mind, and improve your
-            lifestyle with personalized yoga sessions.
-          </p>
-        </div>
+    <Image
+      src="/images/logo1.png"
+      alt="Yoga Wellness Logo"
+      width={56}
+      height={56}
+      className="w-full h-full object-cover"
+    />
+
+  </div>
+
+  <div>
+
+    <h2 className="text-2xl font-bold text-white">
+      Yoga Wellness
+    </h2>
+
+    <p className="text-sm text-green-400">
+      Balance • Health • Peace
+    </p>
+
+  </div>
+
+</div>
 
         {/* Links */}
         <div>
@@ -75,7 +87,7 @@ export default function Footer() {
 
             <div className="flex items-center gap-3">
               <FiMail className="text-green-400" />
-              hello@yogawellness.com
+              neeraj@yogawellness.com
             </div>
 
           </div>

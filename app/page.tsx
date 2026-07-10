@@ -1,62 +1,257 @@
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { FaPlay, FaLeaf, FaAward } from "react-icons/fa";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 export default function HomePage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-[80vh] flex items-center bg-cream dark:bg-dark">
-        <div className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              🧘 5000+ Happy Students
+       <section className="relative overflow-hidden bg-[#FDF8F2] min-h-screen flex items-center">
+
+      {/* Animated Background Blobs */}
+
+      <motion.div
+        animate={{
+          x: [0, 80, 0],
+          y: [0, -50, 0],
+          scale: [1, 1.2, 1],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+        }}
+        className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-green-200 blur-[120px] opacity-40"
+      />
+
+      <motion.div
+        animate={{
+          x: [0, -80, 0],
+          y: [0, 60, 0],
+          scale: [1, 1.15, 1],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+        }}
+        className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-emerald-300 blur-[120px] opacity-30"
+      />
+
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+
+        {/* LEFT */}
+
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: .8 }}
+        >
+
+          <motion.span
+            initial={{ opacity:0,y:20 }}
+            animate={{ opacity:1,y:0 }}
+            transition={{ delay:.2 }}
+            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold"
+          >
+            <FaLeaf />
+            Premium Online Yoga
+          </motion.span>
+
+          <motion.h1
+            initial={{ opacity:0,y:40 }}
+            animate={{ opacity:1,y:0 }}
+            transition={{ delay:.4 }}
+            className="text-6xl lg:text-7xl font-black mt-8 leading-tight text-gray-900"
+          >
+            Breathe.
+            <br />
+
+            Move.
+            <br />
+
+            <span className="text-green-600">
+              Transform.
             </span>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl leading-tight text-dark dark:text-cream">
-              Discover Inner Peace Through Yoga
-            </h1>
-            <p className="mt-6 text-lg text-dark/60 dark:text-cream/60 max-w-lg">
-              Transform your body, calm your mind, and improve your lifestyle with personalized yoga sessions.
+
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity:0 }}
+            animate={{ opacity:1 }}
+            transition={{ delay:.7 }}
+            className="mt-8 text-lg text-gray-600 leading-8 max-w-xl"
+          >
+            Discover yoga programs designed to strengthen your body,
+            calm your mind and improve your overall wellness.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity:0,y:20 }}
+            animate={{ opacity:1,y:0 }}
+            transition={{ delay:.9 }}
+            className="flex gap-5 mt-10"
+          >
+
+            <Link
+              href="/pricing"
+              className="bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:scale-105 duration-300 shadow-xl"
+            >
+              Start Free Trial
+            </Link>
+
+           
+
+          </motion.div>
+
+          {/* Stats */}
+
+          <motion.div
+            initial={{ opacity:0 }}
+            animate={{ opacity:1 }}
+            transition={{ delay:1.2 }}
+            className="grid grid-cols-3 mt-14 gap-8"
+          >
+
+            <div>
+
+              <h2 className="text-4xl font-bold text-green-600">
+                5000+
+              </h2>
+
+              <p>Students</p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-4xl font-bold text-green-600">
+                10+
+              </h2>
+
+              <p>Years</p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-4xl font-bold text-green-600">
+                4.9★
+              </h2>
+
+              <p>Rating</p>
+
+            </div>
+
+          </motion.div>
+
+        </motion.div>
+
+        {/* RIGHT */}
+
+        <motion.div
+          initial={{ opacity:0,x:100 }}
+          animate={{ opacity:1,x:0 }}
+          transition={{ duration:.8 }}
+          className="relative flex justify-center"
+        >
+
+          <motion.img
+            animate={{
+              y:[0,-20,0]
+            }}
+            transition={{
+              repeat:Infinity,
+              duration:4
+            }}
+            src="/images/vector2.png"
+            className="w-full max-w-lg relative z-10"
+          />
+
+          {/* Floating Card */}
+
+          <motion.div
+
+            animate={{
+              y:[0,-15,0]
+            }}
+
+            transition={{
+              repeat:Infinity,
+              duration:3
+            }}
+
+            className="absolute left-0 top-20 bg-white backdrop-blur-lg shadow-2xl rounded-3xl p-5"
+
+          >
+
+            <FaAward className="text-green-600 text-3xl"/>
+
+            <h4 className="font-bold mt-3 text-orange-400">
+               Certified Trainer
+           </h4>
+
+          </motion.div>
+
+          <motion.div
+
+            animate={{
+              y:[0,20,0]
+            }}
+
+            transition={{
+              repeat:Infinity,
+              duration:4
+            }}
+
+            className="absolute right-0 bottom-10 bg-white rounded-3xl shadow-2xl p-5"
+
+          >
+
+            <h2 className="text-green-600 text-3xl font-bold">
+
+              100%
+
+            </h2>
+
+            <p className="font-bold mt-3 text-orange-400">
+
+              Satisfaction
+
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/pricing"
-                className="rounded-full bg-primary text-white px-7 py-3.5 font-medium shadow-premium hover:bg-primary/90 transition-colors"
-              >
-                Book Free Trial
-              </Link>
-              <Link
-                href="/pricing"
-                className="rounded-full border border-primary text-primary px-7 py-3.5 font-medium hover:bg-primary/5 transition-colors"
-              >
-                Explore Classes
-              </Link>
-            </div>
 
-            <div className="mt-12 flex flex-wrap gap-8">
-              <div>
-                <p className="font-heading text-3xl text-primary">5000+</p>
-                <p className="text-sm text-dark/50 dark:text-cream/50">Students</p>
-              </div>
-              <div>
-                <p className="font-heading text-3xl text-primary">10+</p>
-                <p className="text-sm text-dark/50 dark:text-cream/50">Years Experience</p>
-              </div>
-              <div>
-                <p className="font-heading text-3xl text-primary">4.9</p>
-                <p className="text-sm text-dark/50 dark:text-cream/50">Rating</p>
-              </div>
-            </div>
-          </div>
+          </motion.div>
 
-          <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 shadow-premium mt-20">
-        <img
-       src="/images/mainhome.png"
-        alt="Yoga Wellness"
-       className="w-full h-full object-cover"
-        />
+        </motion.div>
+
       </div>
+
+      {/* Scroll Indicator */}
+
+      <motion.div
+
+        animate={{
+          y:[0,12,0]
+        }}
+
+        transition={{
+          repeat:Infinity,
+          duration:1.5
+        }}
+
+        className="absolute bottom-8 left-1/2 -translate-x-1/2"
+
+      >
+
+        <div className="w-7 h-12 rounded-full border-2 border-green-600 flex justify-center">
+
+          <div className="w-2 h-2 rounded-full bg-green-600 mt-2"></div>
+
         </div>
-      </main>
+
+      </motion.div>
+
+    </section>
       {/* ----------------------------------------------------------------------------------------------- */}
       <section className="py-24 bg-gradient-to-br from-green-50 to-white">
 
@@ -166,40 +361,50 @@ export default function HomePage() {
      <div className="absolute -inset-4 bg-green-100 rounded-[60%_40%_55%_45%/45%_55%_45%_55%] blur-2xl opacity-60"></div>
 
   <img
-    src="/images/homeimg.jpeg"
-    alt="Yoga Lifestyle"
-    className="relative w-full h-[600px] object-cover
+  src="/images/vector.jpeg"
+  alt="Yoga Lifestyle"
+  className="
+    relative
+    w-full
+    h-[300px]
+    sm:h-[400px]
+    md:h-[500px]
+    lg:h-[600px]
+    object-cover
     rounded-[60%_40%_55%_45%/45%_55%_45%_55%]
-    shadow-2xl border-8 border-white"
-  />
+    shadow-2xl
+    border-8
+    border-white
+  "
+/>
 
         {/* Floating Card */}
 
-        <div className="absolute -bottom-8 left-8 bg-white rounded-3xl shadow-xl p-6">
+       <div className="absolute -bottom-4 left-4 sm:-bottom-6 sm:left-6 lg:-bottom-8 lg:left-8 bg-white rounded-2xl lg:rounded-3xl shadow-xl p-3 sm:p-4 lg:p-6">
 
-          <h3 className="text-4xl font-bold text-green-600">
-            5000+
-          </h3>
+  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600">
+    5000+
+  </h3>
 
-          <p className="text-gray-600">
-            Happy Students
-          </p>
+  <p className="text-xs sm:text-sm lg:text-base text-gray-600">
+    Happy Students
+  </p>
 
-        </div>
+</div>
 
         {/* Floating Card */}
 
-        <div className="absolute top-8 -right-6 bg-green-600 text-white rounded-3xl p-6 shadow-xl">
+       <div className="absolute top-4 right-2 sm:top-6 sm:right-4 lg:top-8 lg:-right-6 bg-green-600 text-white rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-xl">
 
-          <h3 className="text-3xl font-bold">
-            4.9 ★
-          </h3>
+  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">
+    4.9 ★
+  </h3>
 
-          <p>
-            Student Rating
-          </p>
+  <p className="text-xs sm:text-sm lg:text-base">
+    Student Rating
+  </p>
 
-        </div>
+</div>
 
       </div>
 
