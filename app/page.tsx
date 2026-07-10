@@ -48,7 +48,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 shadow-premium">
+          <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 shadow-premium mt-20">
         <img
        src="/images/mainhome.png"
         alt="Yoga Wellness"

@@ -5,7 +5,7 @@ export default function ContactPage() {
     <main className="bg-gray-50">
 <Navbar />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white py-24">
+      <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white  py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h1 className="text-5xl font-bold mb-6">
