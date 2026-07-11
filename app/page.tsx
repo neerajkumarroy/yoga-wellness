@@ -360,26 +360,28 @@ export default function HomePage() {
 
      <div className="absolute -inset-4 bg-green-100 rounded-[60%_40%_55%_45%/45%_55%_45%_55%] blur-2xl opacity-60"></div>
 
+<div className="group flex justify-center items-center perspective-[1000px]">
   <img
-  src="/images/vector.jpeg"
-  alt="Yoga Lifestyle"
-  className="
-    relative
-    w-full
-    h-[300px]
-    sm:h-[400px]
-    md:h-[500px]
-    lg:h-[600px]
-    object-cover
-    rounded-[60%_40%_55%_45%/45%_55%_45%_55%]
-    shadow-2xl
-    border-8
-    border-white
-  "
-/>
+    src="/images/vector3.png"
+    alt="Yoga Lifestyle"
+    className="
+      w-full
+      max-w-[550px]
+      h-auto
+      object-contain
+      drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]
+      transition-all
+      duration-700
+      ease-in-out
+      group-hover:scale-105
+      group-hover:-translate-y-3
+      group-hover:rotate-y-6
+    "
+  />
+</div>
 
         {/* Floating Card */}
-
+{/* 
        <div className="absolute -bottom-4 left-4 sm:-bottom-6 sm:left-6 lg:-bottom-8 lg:left-8 bg-white rounded-2xl lg:rounded-3xl shadow-xl p-3 sm:p-4 lg:p-6">
 
   <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600">
@@ -390,11 +392,11 @@ export default function HomePage() {
     Happy Students
   </p>
 
-</div>
+</div> */}
 
         {/* Floating Card */}
 
-       <div className="absolute top-4 right-2 sm:top-6 sm:right-4 lg:top-8 lg:-right-6 bg-green-600 text-white rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-xl">
+       {/* <div className="absolute top-4 right-2 sm:top-6 sm:right-4 lg:top-8 lg:-right-6 bg-green-600 text-white rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-xl">
 
   <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">
     4.9 ★
@@ -404,7 +406,7 @@ export default function HomePage() {
     Student Rating
   </p>
 
-</div>
+</div> */}
 
       </div>
 
@@ -415,7 +417,7 @@ export default function HomePage() {
 </section>
 
 {/* ------------------------------------------------------------------------------------------------------- */}
-<section className="py-20 bg-gradient-to-b from-white to-green-50">
+<section className="bg-gradient-to-b from-white to-green-50">
   <div className="max-w-7xl mx-auto px-6">
 
     {/* Section Heading */}
