@@ -110,7 +110,8 @@ export default async function BlogDetails({ params }: Props) {
 
       </main>
 
-      <Footer />
+       <div className="mt-[-100px]"><Footer /></div>
+      
     </>
   );
 }
