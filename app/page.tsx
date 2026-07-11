@@ -551,54 +551,12 @@ export default function HomePage() {
 
     {/* Bottom Stats */}
 
-    <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-      <div>
-        <h3 className="text-4xl font-bold text-green-600">
-          5000+
-        </h3>
-
-        <p className="text-gray-600 mt-2">
-          Happy Students
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-4xl font-bold text-green-600">
-          4.9★
-        </h3>
-
-        <p className="text-gray-600 mt-2">
-          Average Rating
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-4xl font-bold text-green-600">
-          10+
-        </h3>
-
-        <p className="text-gray-600 mt-2">
-          Years Experience
-        </p>
-      </div>
-
-      <div>
-        <h3 className="text-4xl font-bold text-green-600">
-          100%
-        </h3>
-
-        <p className="text-gray-600 mt-2">
-          Satisfaction
-        </p>
-      </div>
-
-    </div>
+    <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"></div>
 
   </div>
 </section>
 {/* ------------------------------------------------------------------------------------ */}
-<section className="py-24 bg-gradient-to-r from-green-600 to-emerald-500">
+<section className="py-24 bg-gradient-to-r from-green-600 to-emerald-500" >
   <div className="max-w-7xl mx-auto px-6">
 
     <div className="text-center text-white mb-14">
@@ -733,7 +691,7 @@ export default function HomePage() {
       </div>
 
       <div className="relative bg-green-50 rounded-3xl p-8 text-center hover:shadow-xl transition">
-        <div className="w-16 h-16 mx-auto rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold">
+        <div className="w-16 h-16 mx-auto rounded-full bg-orange-600 text-white flex items-center justify-center text-2xl font-bold">
           2
         </div>
 
@@ -761,7 +719,7 @@ export default function HomePage() {
       </div>
 
       <div className="relative bg-green-50 rounded-3xl p-8 text-center hover:shadow-xl transition">
-        <div className="w-16 h-16 mx-auto rounded-full bg-green-600 text-white flex items-center justify-center text-2xl font-bold">
+        <div className="w-16 h-16 mx-auto rounded-full bg-orange-600 text-white flex items-center justify-center text-2xl font-bold">
           4
         </div>
 
@@ -780,7 +738,7 @@ export default function HomePage() {
     <div className="mt-16 text-center">
       <a
         href="/pricing"
-        className="inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition"
+        className="inline-block bg-orange-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold shadow-lg transition"
       >
         Start Your Journey →
       </a>
