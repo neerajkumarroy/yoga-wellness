@@ -243,7 +243,7 @@ export default function PricingPage() {
   </div>
 
 </section>
-<Footer />
+<div className="mt-[-100px]"><Footer /></div>
     </main>
   );
 }

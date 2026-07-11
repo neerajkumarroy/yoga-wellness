@@ -248,7 +248,7 @@ return (
 
 </section>
 
-      <Footer />
+      <div className="mt-[-100px]"><Footer /></div>
 
     </main>
   );

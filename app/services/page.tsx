@@ -181,7 +181,7 @@ export default function ServicesPage() {
 
       </main>
 
-      <Footer />
+      <div className="mt-[-100px]"><Footer /></div>
     </>
   );
 }

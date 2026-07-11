@@ -320,7 +320,7 @@ export default function ContactPage() {
   </div>
 
 </section>
-<Footer />
+<div className="mt-[-100px]"><Footer /></div>
     </main>
   );
 }

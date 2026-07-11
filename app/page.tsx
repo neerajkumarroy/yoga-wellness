@@ -62,7 +62,7 @@ export default function HomePage() {
             initial={{ opacity:0,y:40 }}
             animate={{ opacity:1,y:0 }}
             transition={{ delay:.4 }}
-            className="text-6xl lg:text-7xl font-black mt-8 leading-tight text-gray-900 mt-20"
+            className="text-6xl lg:text-7xl font-black leading-tight text-gray-900 mt-25"
           >
             Breathe.
             <br />
