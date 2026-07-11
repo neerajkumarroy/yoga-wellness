@@ -85,16 +85,17 @@ export default function RegisterPage() {
 
       <section className="font-sans relative flex min-h-screen mt-10 items-center justify-center overflow-hidden px-6 py-16">
         {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="absolute inset-0 block h-full w-full object-cover"
-        >
-          <source src="/images/video2.mp4" type="video/mp4" />
-        </video>
+      
+
+<div className="absolute inset-0">
+  <Image
+    src="/images/loginimg.png"
+    alt="Login Background"
+    fill
+    priority
+    className="object-cover"
+  />
+</div>
         {/* Overlay for text/form legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1C2621]/70 via-[#1C2621]/50 to-[#1C2621]/70" />
 

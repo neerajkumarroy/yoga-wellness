@@ -60,17 +60,15 @@ export default function LoginPage() {
       <Navbar />
 
      <section className="relative min-h-screen mt-10 bg-gradient-to-br from-green-50 via-white to-emerald-100 dark:from-slate-900 dark:via-gray-900 dark:to-black flex items-center justify-center overflow-hidden px-6 py-16 font-sans">
-        {/* Background video */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="auto"
-          className="absolute inset-0 block h-full w-full object-cover"
-        >
-          <source src="/images/video.mp4" type="video/mp4" />
-        </video>
+       <div className="absolute inset-0">
+  <Image
+    src="/images/loginimg.png"
+    alt="Login Background"
+    fill
+    priority
+    className="object-cover"
+  />
+</div>
         {/* Overlay for text/form legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1C2621]/70 via-[#1C2621]/50 to-[#1C2621]/70" />
 
