@@ -17,6 +17,10 @@ const navLinks = [
       {
         href: "/services/reduce-stress",
         label: "🧘 Reduce Stress",
+      },      
+      {
+        href: "/services",
+        label: "Services",
       },
       {
         href: "/services/build-strength",

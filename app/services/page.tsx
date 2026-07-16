@@ -7,15 +7,15 @@ const services = [
     icon: "🧘",
     title: "Yoga Classes",
     description:
-      "Join beginner to advanced yoga classes guided by certified instructors.",
-       image: "/images/yoga3.jpeg",
+      "Transform your body and mind with expert-led yoga classes for every level. Our certified instructors guide you through a personalized journey toward greater strength, flexibility, balance, and lasting well-being.",
+       image: "/images/service.jpg",
   },
   {
     icon: "🧠",
     title: "Meditation",
     description:
       "Reduce stress and improve focus through guided meditation sessions.",
-       image: "/images/yoga5.jpeg",
+       image: "/images/service2.png",
   },
   {
     icon: "💪",
@@ -36,14 +36,14 @@ const services = [
     title: "Therapeutic Yoga",
     description:
       "Special yoga sessions for back pain, stress relief, and flexibility.",
-       image: "/images/vector3.png",
+       image: "/images/service4.png",
   },
   {
     icon: "💻",
     title: "Online Classes",
     description:
       "Attend live yoga sessions from anywhere with expert trainers.",
-       image: "/images/vector2.png",
+       image: "/images/service3.jpg",
   },
 ];
 
