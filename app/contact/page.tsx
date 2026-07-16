@@ -3,22 +3,78 @@ import Navbar from "../../components/layout/Navbar";
 export default function ContactPage() {
   return (
     <main className="bg-gray-50">
-<Navbar />
+      <Navbar />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#FAF7F2] via-[#F3F9F2] to-[#DDF5E5] py-33">
 
-          <h1 className="text-5xl font-bold mb-6">
-            Contact Us
-          </h1>
+  {/* Background Effects */}
+  <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-green-200/40 blur-[120px]"></div>
+  <div className="absolute top-10 right-0 h-80 w-80 rounded-full bg-emerald-300/30 blur-[100px]"></div>
+  <div className="absolute -bottom-20 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-lime-200/40 blur-[120px]"></div>
 
-          <p className="text-xl max-w-3xl mx-auto">
-            We'd love to hear from you. Whether you have questions about our yoga
-            classes, memberships, or wellness programs, our team is here to help.
-          </p>
+  <div className="relative max-w-7xl mx-auto px-6">
 
+    <div className="max-w-4xl mx-auto text-center">
+
+      {/* Badge */}
+      <span className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/70 backdrop-blur-md px-5 py-2 text-sm font-medium text-green-700 shadow-sm mb-8">
+        🌿 Get In Touch
+      </span>
+
+      {/* Heading */}
+      <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight text-gray-900 mb-6">
+        Contact
+        <span className="block text-green-700">
+          Yoga Wellness
+        </span>
+      </h1>
+
+      {/* Description */}
+      <p className="text-lg md:text-xl text-gray-600 leading-8 max-w-3xl mx-auto mb-12">
+        We'd love to hear from you. Whether you have questions about yoga
+        classes, memberships, meditation sessions, or wellness programs,
+        our experienced team is here to help you begin a healthier,
+        happier, and more balanced life.
+      </p>
+
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row justify-center gap-5 mb-16">
+
+        <button className="rounded-full bg-green-700 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:bg-green-800 hover:-translate-y-1">
+          Book Free Trial
+        </button>
+
+        <button className="rounded-full border-2 border-green-700 px-8 py-4 font-semibold text-green-700 transition-all duration-300 hover:bg-green-700 hover:text-white">
+          Contact Our Team
+        </button>
+
+      </div>
+
+      {/* Stats */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+        <div className="rounded-2xl bg-white/80 backdrop-blur-md shadow-lg p-6 border border-green-100">
+          <h3 className="text-4xl font-bold text-green-700">5000+</h3>
+          <p className="mt-2 text-gray-600">Happy Students</p>
         </div>
-      </section>
+
+        <div className="rounded-2xl bg-white/80 backdrop-blur-md shadow-lg p-6 border border-green-100">
+          <h3 className="text-4xl font-bold text-green-700">10+</h3>
+          <p className="mt-2 text-gray-600">Years Experience</p>
+        </div>
+
+        <div className="rounded-2xl bg-white/80 backdrop-blur-md shadow-lg p-6 border border-green-100">
+          <h3 className="text-4xl font-bold text-green-700">100%</h3>
+          <p className="mt-2 text-gray-600">Personal Guidance</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Contact Info */}
 
@@ -188,139 +244,139 @@ export default function ContactPage() {
 
       <section className="py-24 bg-gradient-to-br from-green-50 via-white to-green-100">
 
-  <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
 
-    {/* Heading */}
+          {/* Heading */}
 
-    <div className="text-center mb-14">
+          <div className="text-center mb-14">
 
-      <span className="inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-semibold">
-        FAQ
-      </span>
+            <span className="inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-semibold">
+              FAQ
+            </span>
 
-      <h2 className="text-5xl font-bold text-gray-900 mt-5">
-        Frequently Asked
-        <span className="text-green-600"> Questions</span>
-      </h2>
+            <h2 className="text-5xl font-bold text-gray-900 mt-5">
+              Frequently Asked
+              <span className="text-green-600"> Questions</span>
+            </h2>
 
-      <p className="text-gray-600 mt-5 text-lg max-w-2xl mx-auto">
-        Find answers to the most commonly asked questions about our yoga
-        classes, memberships, and wellness programs.
-      </p>
+            <p className="text-gray-600 mt-5 text-lg max-w-2xl mx-auto">
+              Find answers to the most commonly asked questions about our yoga
+              classes, memberships, and wellness programs.
+            </p>
 
-    </div>
-
-    {/* FAQ Cards */}
-
-    <div className="space-y-6">
-
-      <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-
-        <div className="flex items-start gap-4">
-
-          <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
-            🧘
           </div>
 
-          <div>
+          {/* FAQ Cards */}
 
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              Do I need previous yoga experience?
-            </h3>
+          <div className="space-y-6">
 
-            <p className="text-gray-600 leading-7">
-              No. Our yoga classes are designed for beginners, intermediate,
-              and advanced practitioners. Our instructors guide you according
-              to your experience level.
-            </p>
+            <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+              <div className="flex items-start gap-4">
+
+                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
+                  🧘
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    Do I need previous yoga experience?
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    No. Our yoga classes are designed for beginners, intermediate,
+                    and advanced practitioners. Our instructors guide you according
+                    to your experience level.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+              <div className="flex items-start gap-4">
+
+                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
+                  💻
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    Do you offer online yoga classes?
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    Yes! We offer both online live sessions and offline studio
+                    classes so you can practice yoga anytime, anywhere.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+              <div className="flex items-start gap-4">
+
+                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
+                  📅
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    How can I book a class?
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    Booking is easy! Simply fill out the contact form, call us
+                    directly, or register through our website to reserve your spot.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+
+              <div className="flex items-start gap-4">
+
+                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
+                  🕒
+                </div>
+
+                <div>
+
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    What are your class timings?
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    We offer flexible morning and evening batches from Monday to
+                    Saturday to suit your schedule.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
 
         </div>
 
-      </div>
-
-      <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-
-        <div className="flex items-start gap-4">
-
-          <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
-            💻
-          </div>
-
-          <div>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              Do you offer online yoga classes?
-            </h3>
-
-            <p className="text-gray-600 leading-7">
-              Yes! We offer both online live sessions and offline studio
-              classes so you can practice yoga anytime, anywhere.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-
-        <div className="flex items-start gap-4">
-
-          <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
-            📅
-          </div>
-
-          <div>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              How can I book a class?
-            </h3>
-
-            <p className="text-gray-600 leading-7">
-              Booking is easy! Simply fill out the contact form, call us
-              directly, or register through our website to reserve your spot.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div className="bg-white rounded-3xl shadow-lg border border-green-100 p-7 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-
-        <div className="flex items-start gap-4">
-
-          <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center text-2xl">
-            🕒
-          </div>
-
-          <div>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-3">
-              What are your class timings?
-            </h3>
-
-            <p className="text-gray-600 leading-7">
-              We offer flexible morning and evening batches from Monday to
-              Saturday to suit your schedule.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<div className="mt-[-100px]"><Footer /></div>
+      </section>
+      <div className="mt-[-100px]"><Footer /></div>
     </main>
   );
 }

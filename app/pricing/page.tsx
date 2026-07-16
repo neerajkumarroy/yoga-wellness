@@ -52,20 +52,53 @@ export default function PricingPage() {
     <main className="bg-gray-50">
 <Navbar />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white mt-22 py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#FAF7F2] via-[#F3F9F2] to-[#DDF5E5] py-50 ">
 
-          <h1 className="text-5xl font-bold mb-6">
-            Choose Your Wellness Plan
-          </h1>
+  {/* Background Glow */}
+  <div className="absolute -top-32 -left-32 h-96 w-96 rounded-full bg-green-300/40 blur-[120px]"></div>
+  <div className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-emerald-300/30 blur-[120px]"></div>
+  <div className="absolute top-1/2 left-1/2 h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full bg-lime-200/30 blur-[140px]"></div>
 
-          <p className="text-xl max-w-3xl mx-auto">
-            Select a membership that fits your lifestyle and begin your yoga
-            journey today.
-          </p>
+  {/* Pattern */}
+  <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,#15803d_1px,transparent_1px)] [background-size:32px_32px]"></div>
 
-        </div>
-      </section>
+  <div className="relative max-w-7xl mx-auto px-6 text-center">
+
+    {/* Badge */}
+    <span className="inline-flex items-center gap-2 rounded-full border border-green-200 bg-white/80 px-5 py-2 text-sm font-semibold text-green-700 shadow-md mb-8">
+      💚 Flexible Membership Plans
+    </span>
+
+    {/* Heading */}
+    <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-gray-900 leading-tight mb-6">
+      Find the Perfect
+      <span className="block text-green-700">
+        Wellness Plan
+      </span>
+    </h1>
+
+    {/* Description */}
+    <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 leading-8 mb-12">
+      Choose a membership that matches your goals, schedule, and lifestyle.
+      Whether you're just beginning your yoga journey or looking to deepen
+      your practice, we have a plan designed for you.
+    </p>
+
+    {/* CTA Buttons */}
+    <div className="flex flex-col sm:flex-row justify-center gap-5 mb-16">
+
+      <button className="rounded-full bg-green-700 px-8 py-4 font-semibold text-white shadow-xl transition-all duration-300 hover:bg-green-800 hover:-translate-y-1">
+        View Memberships
+      </button>
+
+      <button className="rounded-full border-2 border-green-700 px-8 py-4 font-semibold text-green-700 transition-all duration-300 hover:bg-green-700 hover:text-white">
+        Book Free Trial
+      </button>
+
+    </div>   
+
+    </div>
+</section>
 
       {/* Pricing Cards */}
 
@@ -180,7 +213,7 @@ export default function PricingPage() {
           🧘
         </div>
 
-        <h3 className="text-xl font-bold mt-6">
+        <h3 className="text-xl font-bold mt-6 text-orange-500">
           Unlimited Classes
         </h3>
 
@@ -196,7 +229,7 @@ export default function PricingPage() {
           👨‍🏫
         </div>
 
-        <h3 className="text-xl font-bold mt-6">
+        <h3 className="text-xl font-bold mt-6 text-orange-500">
           Expert Trainers
         </h3>
 
@@ -212,7 +245,7 @@ export default function PricingPage() {
           📱
         </div>
 
-        <h3 className="text-xl font-bold mt-6">
+        <h3 className="text-xl font-bold mt-6 text-orange-500">
           Online & Offline
         </h3>
 
@@ -228,7 +261,7 @@ export default function PricingPage() {
           ❤️
         </div>
 
-        <h3 className="text-xl font-bold mt-6">
+        <h3 className="text-xl font-bold mt-6 text-orange-500">
           Personal Guidance
         </h3>
 

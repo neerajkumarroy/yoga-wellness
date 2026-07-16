@@ -348,9 +348,12 @@ export default function HomePage() {
 
         </div>
 
-        <button className="mt-10 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition">
-          Start Your Journey →
-        </button>
+        <Link
+              href="/pricing"
+             className="mt-10 inline-block bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition duration-300"
+             >
+         Start Your Journey →
+       </Link>
 
       </div>
 
@@ -362,7 +365,7 @@ export default function HomePage() {
 
 <div className="group flex justify-center items-center perspective-[1000px]">
   <img
-    src="/images/vector3.png"
+    src="/images/vector2.png"
     alt="Yoga Lifestyle"
     className="
       w-full
@@ -379,35 +382,6 @@ export default function HomePage() {
     "
   />
 </div>
-
-        {/* Floating Card */}
-{/* 
-       <div className="absolute -bottom-4 left-4 sm:-bottom-6 sm:left-6 lg:-bottom-8 lg:left-8 bg-white rounded-2xl lg:rounded-3xl shadow-xl p-3 sm:p-4 lg:p-6">
-
-  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600">
-    5000+
-  </h3>
-
-  <p className="text-xs sm:text-sm lg:text-base text-gray-600">
-    Happy Students
-  </p>
-
-</div> */}
-
-        {/* Floating Card */}
-
-       {/* <div className="absolute top-4 right-2 sm:top-6 sm:right-4 lg:top-8 lg:-right-6 bg-green-600 text-white rounded-2xl lg:rounded-3xl p-3 sm:p-4 lg:p-6 shadow-xl">
-
-  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold">
-    4.9 ★
-  </h3>
-
-  <p className="text-xs sm:text-sm lg:text-base">
-    Student Rating
-  </p>
-
-</div> */}
-
       </div>
 
     </div>
@@ -590,9 +564,12 @@ export default function HomePage() {
           Meditation and breathing techniques to calm your mind.
         </p>
 
-        <button className="mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full">
-          Explore
-        </button>
+        <Link
+            href="/services/reduce-stress"
+            className="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full"
+              >
+              Explore
+        </Link>
 
       </div>
 
@@ -608,9 +585,12 @@ export default function HomePage() {
           Powerful yoga sessions to improve strength and flexibility.
         </p>
 
-        <button className="mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full">
-          Explore
-        </button>
+        <Link
+            href="/services/build-strength"
+            className="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full"
+         >
+        Explore
+       </Link>
 
       </div>
 
@@ -626,9 +606,12 @@ export default function HomePage() {
           Burn calories with guided yoga and healthy lifestyle plans.
         </p>
 
-        <button className="mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full">
-          Explore
-        </button>
+          <Link
+         href="/services/weight-loss"
+        className="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full"
+         >
+       Explore
+      </Link>
 
       </div>
 
@@ -644,10 +627,12 @@ export default function HomePage() {
           Complete wellness plans including yoga, meditation and nutrition.
         </p>
 
-        <button className="mt-8 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full">
-          Explore
-        </button>
-
+        <Link
+         href="/services/healthy-lifestyle"
+       className="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full"
+       >
+         Explore
+      </Link>
       </div>
 
     </div>

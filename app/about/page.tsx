@@ -5,17 +5,109 @@ export default function AboutPage() {
     <main className="bg-white">
       <Navbar />
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-emerald-500 text-white mt-22 py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold mb-6">
-            About Yoga Wellness
-          </h1>
-          <p className="text-xl max-w-3xl mx-auto leading-8">
-            Helping people achieve a healthier body, peaceful mind, and balanced
-            lifestyle through yoga, meditation, and holistic wellness.
-          </p>
-        </div>
-      </section>
+     <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-[#FAF7F2] via-[#F3F9F2] to-[#DDF5E5] flex items-center justify-center">
+
+  {/* Background Glow */}
+  <div className="absolute -top-32 -left-32 w-[450px] h-[450px] rounded-full bg-green-300/40 blur-[120px]" />
+
+  <div className="absolute -bottom-32 -right-32 w-[450px] h-[450px] rounded-full bg-emerald-300/30 blur-[120px]" />
+
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-lime-200/20 blur-[150px]" />
+
+  {/* Background Pattern */}
+  <div className="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,#15803d_1px,transparent_1px)] [background-size:35px_35px]" />
+
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
+
+    {/* Badge */}
+    <span className="inline-block px-6 py-2 rounded-full border border-green-200 bg-white/70 backdrop-blur-md text-green-700 font-semibold mb-8 shadow-sm">
+      🌿 Welcome to Yoga Wellness
+    </span>
+
+    {/* Heading */}
+    <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight text-gray-900">
+
+      About
+
+      <span className="block bg-gradient-to-r from-green-700 via-emerald-600 to-green-500 bg-clip-text text-transparent">
+        Yoga Wellness
+      </span>
+
+    </h1>
+
+    {/* Description */}
+    <p className="mt-8 max-w-4xl mx-auto text-lg md:text-2xl leading-9 text-gray-600">
+
+      Helping people achieve a healthier body,
+      peaceful mind and balanced lifestyle through
+
+      <span className="text-green-700 font-semibold"> Yoga</span>,
+
+      <span className="text-emerald-600 font-semibold"> Meditation</span>,
+
+      and holistic wellness practices.
+
+    </p>
+
+    {/* Buttons */}
+    <div className="mt-12 flex flex-wrap justify-center gap-6">
+
+      <a
+        href="/services"
+        className="rounded-full bg-green-700 px-10 py-5 font-semibold text-white shadow-xl hover:bg-green-800 hover:-translate-y-1 transition-all duration-300"
+      >
+        Explore Services →
+      </a>
+
+      <a
+        href="/contact"
+        className="rounded-full border-2 border-green-700 px-10 py-5 font-semibold text-green-700 hover:bg-green-700 hover:text-white transition-all duration-300"
+      >
+        Contact Us
+      </a>
+
+    </div>
+
+    {/* Stats */}
+    <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-green-100 p-6 shadow-lg">
+        <h3 className="text-4xl font-bold text-green-700">5000+</h3>
+        <p className="mt-2 text-gray-600">Happy Students</p>
+      </div>
+
+      <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-green-100 p-6 shadow-lg">
+        <h3 className="text-4xl font-bold text-emerald-600">150+</h3>
+        <p className="mt-2 text-gray-600">Yoga Sessions</p>
+      </div>
+
+      <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-green-100 p-6 shadow-lg">
+        <h3 className="text-4xl font-bold text-green-700">10+</h3>
+        <p className="mt-2 text-gray-600">Expert Trainers</p>
+      </div>
+
+      <div className="rounded-3xl bg-white/80 backdrop-blur-xl border border-green-100 p-6 shadow-lg">
+        <h3 className="text-4xl font-bold text-emerald-600">4.9★</h3>
+        <p className="mt-2 text-gray-600">Average Rating</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+
+    <div className="w-8 h-14 border-2 border-green-700 rounded-full flex justify-center">
+
+      <div className="w-2 h-3 bg-green-700 rounded-full mt-2 animate-pulse" />
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Our Story */}
       <section className="py-20">

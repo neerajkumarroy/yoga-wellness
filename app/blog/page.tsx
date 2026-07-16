@@ -21,41 +21,110 @@ return (
       <Navbar />
 
       {/* Hero */}
-      <section className="relative h-[500px]">
+      <section className="relative py-28 overflow-hidden">
 
-        <Image
-          src="/images/yoga8.jpeg"
-          alt="Yoga Blog"
-          fill
-          className="object-cover"
-        />
+  {/* Background Image */}
+  <Image
+    src="/images/yoga7.jpeg"
+    alt="Yoga Lifestyle"
+    fill
+    className="object-cover"
+  />
 
-        <div className="absolute inset-0 bg-black/70" />
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-green-900/60 to-black/70"></div>
 
-        <div className="absolute inset-0 flex items-center justify-center">
+  {/* Content */}
+  <div className="relative z-10 max-w-7xl mx-auto px-6">
 
-          <div className="text-center max-w-4xl px-6">
+    <div className="max-w-4xl">
 
-            <span className="inline-block bg-green-600/20 border border-green-500 text-green-300 px-5 py-2 rounded-full mb-6">
-              Yoga Wellness Blog
-            </span>
+      <span className="inline-flex items-center px-6 py-2 rounded-full bg-green-500/20 border border-green-400/30 backdrop-blur-md text-green-200 font-semibold mb-8">
+        📚 Discover Wellness
+      </span>
 
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-              Live Better.
-              <br />
-              Feel Better.
-            </h1>
+      <h2 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+        Every Article is a
+        <span className="block text-green-400">
+          Step Toward a Healthier You
+        </span>
+      </h2>
 
-            <p className="text-lg md:text-xl text-gray-300 leading-8">
-              Explore yoga, meditation, nutrition, wellness and mindfulness
-              articles written to help you build a healthier and happier life.
-            </p>
+      <p className="text-xl leading-9 text-gray-200 max-w-3xl mb-10">
+        Discover practical yoga routines, guided meditation techniques,
+        breathing exercises, healthy recipes, and expert wellness advice.
+        Start building a stronger body, a calmer mind, and a happier life—
+        one article at a time.
+      </p>
 
-          </div>
+      {/* Buttons */}
+      <div className="flex flex-wrap gap-5">
 
-        </div>
+        <button className="px-8 py-4 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold transition">
+          Explore Articles →
+        </button>
 
-      </section>
+        <button className="px-8 py-4 rounded-full border border-white text-white hover:bg-white hover:text-black transition">
+          Start Reading
+        </button>
+
+      </div>
+
+    </div>
+
+    {/* Floating Cards */}
+    <div className="grid md:grid-cols-3 gap-6 mt-20">
+
+      <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:scale-105 transition">
+
+        <div className="text-5xl mb-5">🧘</div>
+
+        <h3 className="text-2xl font-bold text-white mb-4">
+          Yoga Practice
+        </h3>
+
+        <p className="text-gray-300">
+          Daily yoga routines to improve flexibility,
+          posture and overall health.
+        </p>
+
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:scale-105 transition">
+
+        <div className="text-5xl mb-5">🌿</div>
+
+        <h3 className="text-2xl font-bold text-white mb-4">
+          Healthy Living
+        </h3>
+
+        <p className="text-gray-300">
+          Nutrition tips and lifestyle habits
+          for complete mind-body wellness.
+        </p>
+
+      </div>
+
+      <div className="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/10 hover:scale-105 transition">
+
+        <div className="text-5xl mb-5">🧠</div>
+
+        <h3 className="text-2xl font-bold text-white mb-4">
+          Mindfulness
+        </h3>
+
+        <p className="text-gray-300">
+          Meditation and breathing techniques
+          to reduce stress and improve focus.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* Categories */}
 
