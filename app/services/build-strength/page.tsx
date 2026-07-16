@@ -305,7 +305,7 @@ export default function BuildStrengthPageClient() {
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <div>
             <img
-              src="/images/strength.png"
+              src="/images/strength.jpg"
               alt="Strength Yoga"
               className="rounded-2xl shadow-lg w-full"
             />

@@ -5,7 +5,7 @@ export default function AboutPage() {
     <main className="bg-white">
       <Navbar />
       {/* Hero Section */}
-     <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-[#FAF7F2] via-[#F3F9F2] to-[#DDF5E5] flex items-center justify-center">
+     <section className="relative w-full min-h-screen overflow-hidden bg-gradient-to-br from-[#FAF7F2] via-[#F3F9F2] to-[#DDF5E5] flex items-center justify-center pt-40">
 
   {/* Background Glow */}
   <div className="absolute -top-32 -left-32 w-[450px] h-[450px] rounded-full bg-green-300/40 blur-[120px]" />
