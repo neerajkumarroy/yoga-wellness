@@ -19,10 +19,6 @@ const navLinks = [
         label: "🧘 Reduce Stress",
       },      
       {
-        href: "/services",
-        label: " ✨ Services",
-      },
-      {
         href: "/services/build-strength",
         label: "💪 Build Strength",
       },
