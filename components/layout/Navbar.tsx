@@ -20,7 +20,7 @@ const navLinks = [
       },      
       {
         href: "/services",
-        label: "Services",
+        label: " ✨ Services",
       },
       {
         href: "/services/build-strength",
